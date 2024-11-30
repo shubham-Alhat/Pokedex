@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+  </head>
+  <link rel="stylesheet" href="src/output.css" />
+  <!-- google fonts links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+    rel="stylesheet"
+  />
+  <!-- font Awesome link -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <body
+    class="h-screen w-screen bg-white px-3 py-3 sm:px-8 sm:py-4 overflow-x-hidden"
+  >
+    <!-- header -->
+    <header>
+      <!--Heading Container -->
+      <div class="w-full flex items-center justify-center gap-2">
+        <!-- Pokemonlogo -->
+        <img
+          src="pokeball.jpg"
+          alt="pokemon-logo"
+          class="h-14 sm:h-20 cursor-pointer"
+        />
+
+        <!-- Pokedex Title -->
+        <h1 class="text-3xl sm:text-6xl font-luckiestGuy text-slate-800">
+          Pokédex
+        </h1>
+      </div>
+
+      <!-- Search Container (Grid Container)-->
+      <div
+        id="input-search"
+        class="w-full grid grid-cols-[20px_1fr] gap-2 items-center py-2 px-2 rounded-lg mt-3 shadow-md shadow-black"
+      >
+        <!-- 1st Grid Item : Search icon -->
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <!-- 2nd Grid Item : Form Element (input Search + Submit Button)-->
+        <form action="#" class="flex items-center gap-2">
+          <!-- Input Search -->
+          <input
+            type="search"
+            placeholder="Search Pokémon"
+            class="w-full text-lg bg-transparent font-sans outline-none pl-2 placeholder-slate-400"
+          />
+
+          <!-- Search OR Submit-Button -->
+          <button
+            type="submit"
+            class="text-lg bg-yellow px-1 sm:px-2 rounded-lg outline-none hover:shadow-sm hover:shadow-black"
+          >
+            Search
+          </button>
+        </form>
+
+        <!-- Search Container or Div Ends Here -->
+      </div>
+
+      <!-- Sort Button -->
+      <button
+        id="sort-button"
+        class="sm:text-xl py-1 font-semibold px-3 text-slate-700 bg-yellow mt-3 rounded-lg outline-none hover:shadow-sm hover:shadow-black"
+      >
+        Sort By
+      </button>
+
+      <!-- Sort Option Box -->
+      <div class="">
+        <!-- Sort-Option-Box which moves in and out -->
+        <div id="sort-box" class="w-24 mt-2 absolute z-50 hidden">
+          <!-- ul element which contains li -->
+          <ul class="text-center text-slate-700 flex flex-col gap-3">
+            <!-- 1st option Box -->
+            <li
+              class="px-2 py-1 cursor-pointer rounded-sm border-[1px] border-solid border-amber-300 bg-yellow shadow-md shadow-black hover:bg-amber-200"
+            >
+              Name
+            </li>
+
+            <!-- 2nd Option Box -->
+            <li
+              class="px-2 py-1 cursor-pointer rounded-sm border-[1px] border-solid border-amber-300 bg-yellow shadow-md shadow-black hover:bg-amber-200"
+            >
+              Number
+            </li>
+          </ul>
+        </div>
+        <!-- Sort Box which Moves ENDS Here -->
+      </div>
+      <!-- Parent Div of Sort Box Here -->
+    </header>
+    <!-- Header Ends Here  -->
+
+    <!-- main -->
+    <main class="mt-5"></main>
+    <footer class="w-full mt-5 flex flex-col justify-center items-center">
+      <button
+        id="continue-button"
+        type="submit"
+        class="px-2 py-1 m-3 rounded-lg font-semibold bg-yellow hover:shadow-sm hover:shadow-black md:text-xl md:px-3"
+      >
+        continue...
+      </button>
+    </footer>
+
+    <!-- script js -->
+    <script src="script.js"></script>
+  </body>
+</html>
