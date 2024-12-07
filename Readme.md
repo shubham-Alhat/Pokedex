@@ -1,7 +1,6 @@
-# Improvements in Points
+# Improvements Needed.
 
-## Pokemon High Resolution URL.
-
+## URL FOR POKEMON IMAGES.
 ### URL : "https://raw.githubusercontent.com/PokeAPI/sprites/3523482c5365843799c8acf5fcad7cccd57fea9d/sprites/pokemon/other/dream-world/${Pokemon-id}.svg"
 
 ## Dynamic Grid Responsiveness:
